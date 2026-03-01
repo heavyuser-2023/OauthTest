@@ -6,7 +6,7 @@ import { VitePWA } from "vite-plugin-pwa";
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), "");
   return {
-  base: "/<REPO_NAME>/", // TODO: GitHub 저장소 이름으로 변경
+  base: "/oauthtest/", 
   plugins: [
     react(),
     VitePWA({
