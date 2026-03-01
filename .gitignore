@@ -7,9 +7,10 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+# 빌드 결과물 및 의존성
+node_modules/
+dist/
+dist-ssr/
 *.local
 
 # Editor directories and files
@@ -23,15 +24,22 @@ dist-ssr
 *.sln
 *.sw?
 
-# Environment Variables
+# 환경 변수 & 민감 정보 파일 (중요!)
 .env
 .env.*
 !.env.example
+.env.local
+.env.*.local
 
 # Convex generated files & logs
 convex/_generated/
 convex/out/
 .convex/
 
-# PWA generated assets
+# PWA 빌드 산출물 (자동 생성, 커밋 불필요)
 dev-dist/
+sw.js
+workbox-*.js
+
+# 수동 배포 과정에서 생성될 수 있는 임시 git 레포
+dist/.git/
