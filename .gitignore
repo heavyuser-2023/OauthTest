@@ -34,6 +34,4 @@ convex/out/
 .convex/
 
 # PWA generated assets
-/dev-dist/
-/sw.js
-/workbox-*.js
+dev-dist/
