@@ -6,7 +6,7 @@
   "homepage": "https://heavyuser-2023.github.io/quickmemo",
   "scripts": {
     "predeploy": "npx convex deploy --cmd 'npm run build'",
-    "deploy": "gh-pages -d dist --dotfiles -s \"**/*\"",
+    "deploy": "gh-pages -d dist --dotfiles -s \"**/*\" -r https://heavyuser-2023@github.com/heavyuser-2023/quickmemo.git",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
